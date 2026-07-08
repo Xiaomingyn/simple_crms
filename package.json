@@ -1,0 +1,45 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal CRM - A local sales CRM",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm run server\" \"npm run client\"",
+    "client": "vite",
+    "server": "tsx server/index.ts",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@hello-pangea/dnd": "^18.0.1",
+    "better-sqlite3": "^12.11.1",
+    "cors": "^2.8.6",
+    "date-fns": "^4.4.0",
+    "express": "^5.2.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1",
+    "recharts": "^3.9.2",
+    "uuid": "^14.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^6.0.3",
+    "concurrently": "^10.0.3",
+    "jsdom": "^29.1.1",
+    "puppeteer": "^25.3.0",
+    "tsx": "^4.23.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.3",
+    "vitest": "^4.1.10"
+  }
+}
